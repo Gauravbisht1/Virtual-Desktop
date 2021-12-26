@@ -41,11 +41,7 @@ func showGallery(w fyne.Window) {
 	}
 	// tabs.SetTabLocation(container.TabLocationLeading)
 	// s:=tabs.Items
-	imgContainer := container.NewVBox(
-		container.NewVBox(
-			tabs,
-		),
-	)
+	imgContainer := tabs
 
 	// w.Resize(fyne.NewSize(500, 280))
 	w.SetContent(container.NewBorder(Deskbtn, nil, nil, nil, imgContainer))
